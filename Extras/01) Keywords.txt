@@ -1,0 +1,35 @@
+The format for commands in this document is:
+_COMMAND [variable type]
+
+However, the keywords should be used like this for example:
+_TITLE Outcast Lite
+
+
+
+## These should come at the top of your game if they are used: ##
+_TITLE [string] | ex: _TITLE Window Title
+
+## Logic functions that can be used throughout your game: ## 
+_IF [var(condition)] (optional)[arg] [code] | ex: _IF LASTKEY_D1 _GOTO 40
+
+	## _IF conditions ##
+	LASTKEY_ [KEYCODE] | ex: _IF LASTKEY_D1 ...
+			     ex: _IF LASTKEY_D2 ...
+			     [Replace D1 / D2 with keycode of choice]
+		             See 'KC) Key codes.txt' for keycodes
+
+## Regular functions that can be used throughout your game: ##
+_GOTO [int] | ex: _GOTO 40 | Goes to the specified line number and carries on from that line
+_CLEAR | Clears the console screen of any text
+
+## Yielding functions that can be used throughout your game: ##
+_WAIT ANY_KEY | Waits until any key is pressed before proceeding with next line
+_WAIT KEY_ (can be multiple)[KEYCODE] | ex: _WAIT KEY_D1
+                                        ex: _WAIT KEY_D2
+					ex: _WAIT KEY_D1 D2 (Waits for either of the 2 keys before proceeding)
+
+## Misc functions that have no purpose / are used internally: ## 
+_IGNORE | Ignores this line and moves to the next
+
+## Incomplete functions: ##
+1 unlisted

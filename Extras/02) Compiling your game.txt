@@ -1,0 +1,8 @@
+Running pENGuin on it's own will not give you the option to compile your game.
+There should be a pENGuin-compiler.exe in your pENGuin install directory.
+
+Drag your .txt onto the compiler file, it will create a folder that you should ship in it's entirely to your users.
+
+Your users do not require an install of pENGuin, to minimise the work required on your consumer's part.
+
+Please note your pENGuin.exe needs to be named as pENGuin.exe and has to be in the same folder as the compiler.
