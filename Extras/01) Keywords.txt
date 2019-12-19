@@ -10,11 +10,11 @@ _TITLE Outcast Lite
 _TITLE [string] | ex: _TITLE Window Title
 
 ## Logic functions that can be used throughout your game: ## 
-_IF [var(condition)] (optional)[arg] [code] | ex: _IF LASTKEY_D1 _GOTO 40
+_IF [var(condition)] (optional)[arg] [code] | ex: _IF LASTKEY D1 _GOTO 40
 
 	## _IF conditions ##
-	LASTKEY_ [KEYCODE] | ex: _IF LASTKEY_D1 ...
-			     ex: _IF LASTKEY_D2 ...
+	LASTKEY [KEYCODE] | ex: _IF LASTKEY D1 ...
+			     ex: _IF LASTKEY D2 ...
 			     [Replace D1 / D2 with keycode of choice]
 		             See 'KC) Key codes.txt' for keycodes
 
