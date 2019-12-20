@@ -21,6 +21,7 @@ _IF [var(condition)] (optional)[arg] [code] | ex: _IF LASTKEY D1 _GOTO 40
 ## Regular functions that can be used throughout your game: ##
 _GOTO [int] | ex: _GOTO 40 | Goes to the specified line number and carries on from that line
 _CLEAR | Clears the console screen of any text
+_EXIT | Exits the game
 
 ## Yielding functions that can be used throughout your game: ##
 _WAIT ANY_KEY | Waits until any key is pressed before proceeding with next line
