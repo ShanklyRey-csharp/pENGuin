@@ -16,12 +16,19 @@ _IF [var(condition)] (optional)[arg] [code] | ex: _IF LASTKEY D1 _GOTO 40
 	LASTKEY [KEYCODE] | ex: _IF LASTKEY D1 ...
 			     ex: _IF LASTKEY D2 ...
 			     [Replace D1 / D2 with keycode of choice]
-		             See 'KC) Key codes.txt' for keycodes
+		             See 'KC) Key codes' for keycodes
 
 ## Regular functions that can be used throughout your game: ##
 _GOTO [int] | ex: _GOTO 40 | Goes to the specified line number and carries on from that line
 _CLEAR | Clears the console screen of any text
 _EXIT | Exits the game
+
+## Sound functions ##
+_REGSOUND [string] [path] | ex: _REGSOUND Sound_Name File_Name.wav
+		             See '02) Adding sounds' to learn how to import sounds
+
+_PLAYSOUND [string] | ex: _PLAYSOUND Sound_Name
+		       DISCLAIMER: Sounds must be registered via _REGSOUND before they can be played
 
 ## Yielding functions that can be used throughout your game: ##
 _WAIT ANY_KEY | Waits until any key is pressed before proceeding with next line

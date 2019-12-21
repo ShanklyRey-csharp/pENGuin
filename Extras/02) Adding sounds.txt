@@ -1,0 +1,6 @@
+To add sounds, the compiler needs to actually recognise they exist.
+To do this, create a directory called "sounds" (it has to be all lower case too) in the same directory as your game's file.
+
+Then, drag and drop your .wav files into the new directory (pENGuin only supports .wav, any other files will just not be compiled or playable).
+
+See '01) Keywords' to see how to register and play sounds.
